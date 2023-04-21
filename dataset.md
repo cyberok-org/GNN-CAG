@@ -13,7 +13,7 @@ Each `Data` object holds the following attributes:
 - `cwe` : int, number of CWE if y=1, otherwise 0 
 '
 
-The function `create_embedding` that calculates embeddings can be seen in [embedding.py](embedding.py)
+The function `create_embedding` that calculates embeddings can be seen in [embedding.py](./dataset/embedding.py)
 
 ## Some CWE statistics
 - Total number of methods: 128039
