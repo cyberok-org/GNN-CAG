@@ -21,3 +21,25 @@ The function `create_embedding` that calculates embeddings can be seen in [embed
 - Number of methods with CWE: 41069 or 32.08%
 
 ![asd](./dataset/cwe_stats.png)
+
+Top 20:
+- CWE 190 : Integer_Overflow
+- CWE 191 : Integer_Underflow
+- CWE 129 : Improper_Validation_of_Array_Index
+- CWE 89 : SQL_Injection
+- CWE 369 : Divide_by_Zero
+- CWE 789 : Uncontrolled_Mem_Alloc
+- CWE 400 : Resource_Exhaustion
+- CWE 113 : HTTP_Response_Splitting
+- CWE 197 : Numeric_Truncation_Error
+- CWE 80 : XSS
+- CWE 134 : Uncontrolled_Format_String
+- CWE 36 : Absolute_Path_Traversal
+- CWE 15 : External_Control_of_System_or_Configuration_Setting
+- CWE 23 : Relative_Path_Traversal
+- CWE 643 : Xpath_Injection
+- CWE 470 : Unsafe_Reflection
+- CWE 606 : Unchecked_Loop_Condition
+- CWE 90 : LDAP_Injection
+- CWE 78 : OS_Command_Injection
+- CWE 319 : Cleartext_Tx_Sensitive_Info
