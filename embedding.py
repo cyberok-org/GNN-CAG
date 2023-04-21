@@ -5,6 +5,8 @@ import pickle
 
 def create_embedding(MODEL_NAME='all-MiniLM-L6-v2'):
     '''
+    :MODEL_NAME: any model from https://www.sbert.net/docs/pretrained_models.html
+                 'all-mpnet-base-v2' has a better accuracy on benchmarks, but its size is twice as longer
     :return: returns callable function(data.x) -> torch.Tensor[num_nodes, EMBEDDING_SIZE]
     '''
     model = SentenceTransformer('sentence-transformers/' + MODEL_NAME, 

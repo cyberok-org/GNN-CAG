@@ -1,5 +1,23 @@
-Both datasets were collected using [CAG_builder_v2.1.ipynb](CAG_builder_v2.1.ipynb)
-1) Full [dataset](https://drive.google.com/file/d/1is9Ldc5efyBHqxrJ4Kg1wWl0T9OJxywD/view?usp=sharing) of 128k CAGS.
-2) Short [dataset version](https://drive.google.com/file/d/1Q1XoSdScgPTYViizXyMAh7zGz5u__95a/view?usp=sharing) with 1k CAGS.
+## [Link to dataset](https://drive.google.com/file/d/1tp4k7XCr6BKzKiZdOsJ7wJ9pg9YW4FDu/view?usp=sharing) of ~ 128k CAGs.
+
+Dataset was collected using [CAG_builder_v2_4](./dataset/CAG_builder_v2_4.ipynb).
+Only 128k/208k methods were included, while the others were dropped due to low word count, low XML depth or method name that does not start with "good" or "bad".
+
+Dataset is a list of `torch_geometric.data.Data` objects saved with `pickle`.
+
+Each `Data` object holds the following attributes:
+- `data.x` : Node feature matrix with shape [num_nodes, num_node_features]
+- `edge_index` : torch.tensor([2, num_edges], dtype=torch.long)
+- `y` : int, target variable, 1 if code has a vulnerability issue, 0 if not
+- `num_nodes` : int, number of nodes in graph
+- `cwe` : int, number of CWE if y=1, otherwise 0 
+'
 
 The function `create_embedding` that calculates embeddings can be seen in [embedding.py](embedding.py)
+
+## Some CWE statistics
+- Total number of methods: 128039
+- Total number of different CWEs: 105
+- Number of methods with CWE: 41069 or 32.08%
+
+![asd](./dataset/cwe_stats.png)
