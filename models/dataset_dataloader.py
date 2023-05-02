@@ -57,7 +57,7 @@ class IMCAG(InMemoryDataset):
 class GraphDataLoader(DataLoader):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.embedding = create_embedding()
+        self.embedding = create_embedding('all-mpnet-base-v2')
 
     def preprocess(self, batch):
         x = [self.embedding(node) for node in batch.x]
