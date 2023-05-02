@@ -8,17 +8,17 @@ The results of predicting the presence of vulnerabilities in the code on the Jul
 | GCN      |     91.2 |      80.0 |   96.0 | 87.0 |
 
 
-| ![FeaStNet](/images/FeaStNet_10epochs.png) |
-|:------------------------------------------:|
-|                 *FeaStNet*                 |
+| ![FeaStNet](/models/images/FeaStNet_10epochs.png) |
+|:-------------------------------------------------:|
+|                    *FeaStNet*                     |
 
 
-| ![ARMAConv](/images/ARMA_10epochs.png) |
-|:--------------------------------------:|
-|               *ARMAConv*               |
+| ![ARMAConv](/models/images/ARMA_10epochs.png) |
+|:---------------------------------------------:|
+|                  *ARMAConv*                   |
 
 
-| ![GCN](/images/GCN_10epochs.png) |
-|:--------------------------------:|
-|              *GCN*               |
+| ![GCN](/models/images/GCN_10epochs.png) |
+|:---------------------------------------:|
+|                  *GCN*                  |
 
