@@ -10,7 +10,6 @@ from embedding import create_embedding
 
 class IMCAG(InMemoryDataset):
     url = 'https://drive.google.com/uc?id=1foikoZwOJmEGFrYAd_DJrEEAu6MKTPcz'
-    #url = 'https://drive.google.com/uc?id=1QH2WNnx4X7Qm6kDgG6Ry8c5fNSGnjZsI'
 
     def __init__(self, root, transform=None, pre_transform=None, pre_filter=None):
         super().__init__(root, transform, pre_transform, pre_filter)
